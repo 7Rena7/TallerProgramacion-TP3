@@ -32,8 +32,8 @@ namespace EJ2
 
 
             Console.WriteLine($"\n    - Resultados -    ");
-            Console.Write($" El área del triángulo es de: {FacadeTriangulo.DevolverAreaTriangulo(px1, py1, px2, py2, px3, py3)}\n");
-            Console.Write($" Y el perímetro es de: {FacadeTriangulo.DevolverPerimetroTriangulo(px1, py1, px2, py2, px3, py3)}");
+            Console.Write($" El área del triángulo es de: {FacadeFiguraGeometrica.DevolverArea(px1, py1, px2, py2, px3, py3)}\n");
+            Console.Write($" Y el perímetro es de: {FacadeFiguraGeometrica.DevolverPerimetro(px1, py1, px2, py2, px3, py3)}");
             Console.ReadKey();
         }
     }

@@ -22,8 +22,8 @@ namespace EJ2
             double radio = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine($"\n    - Resultados -    \n" +
-                $" El área es de: {FacadeCirculo.DevolverAreaCirculo(px, py, radio)}");
-            Console.Write($" Y su perímetro de: {FacadeCirculo.DevolverPerimetroCirculo(px, py, radio)}");
+                $" El área es de: {FacadeFiguraGeometrica.DevolverArea(px, py, radio)}");
+            Console.Write($" Y su perímetro de: {FacadeFiguraGeometrica.DevolverPerimetro(px, py, radio)}");
             Console.ReadKey();
         }
     }

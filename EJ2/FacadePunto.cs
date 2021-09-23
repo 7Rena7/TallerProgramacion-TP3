@@ -11,9 +11,7 @@ namespace EJ2
         public static double DevolverDistanciaEntrePuntos(double px1, double py1, double px2, double py2)
         {
             Punto p1 = new Punto(px1, py1);
-
             Punto p2 = new Punto(px2, py2);
-
             return Math.Round(p1.CalcularDistanciaDesde(p2), 2);
         }
     }
