@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EJ4
+namespace EJ3
 {
-    public interface IEncriptador
+    abstract class AlgoritmoBusqueda
     {
-        string Encriptar(string pCadena);
-
-        string Desencriptar(string pCadena);
+        public abstract void EjecutarAlgoritmo();
     }
 }
