@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EJ3
 {
-    abstract class AlgoritmoBusqueda
+    public interface IEstrategiaHotel
     {
-        public abstract void EjecutarAlgoritmo();
+        public abstract Paciente Paciente_a_Atender(List<Paciente> pLista);
+
     }
 }

@@ -6,35 +6,49 @@ using System.Threading.Tasks;
 
 namespace EJ3
 {
-    class Paciente
+    public class Paciente
     {
-        private string iNombre;
-        private string iApellido;
-        private string iDNI;
+        private string inombre, iappellido, iDNI;
+        private TipoMotivo imotivo;
+        private DateTime iFechaIngreso;
 
-        public Paciente(string pNombre, string pApellido, string pDNI)
+        public Paciente(string pNombe, string pApellido, string pDNI, TipoMotivo pMotivo, DateTime pFechaDeIngreso)
         {
-            this.iNombre = pNombre;
-            this.iApellido = pApellido;
+            this.inombre = pNombe;
+            this.iappellido = pApellido;
             this.iDNI = pDNI;
+            this.imotivo = pMotivo;
+            this.iFechaIngreso = pFechaDeIngreso;
         }
 
         public string Nombre
         {
-            get { return this.iNombre; }
-            private set { }
+            get { return this.inombre; }
+            set { this.inombre = value; }
         }
 
         public string Apellido
         {
-            get { return this.iApellido; }
-            private set { }
+            get { return this.iappellido; }
+            set { this.iappellido = value; }
         }
-
         public string DNI
         {
             get { return this.iDNI; }
-            private set { }
+            set { this.iDNI = value; }
         }
+        public TipoMotivo Motivo
+        {
+            get { return this.imotivo; }
+            set { this.imotivo = value; }
+        }
+        public DateTime FechaDeIngreso
+        {
+            get { return this.iFechaIngreso; }
+        }
+
+
+
+
     }
 }
